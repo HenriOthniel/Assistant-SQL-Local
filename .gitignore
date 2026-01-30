@@ -1,0 +1,18 @@
+# Fichiers Python temporaires
+__pycache__/
+*.py[cod]
+
+# Environnement virtuel
+venv/
+.env
+
+# Base de données (On ne l'envoie pas, on la recrée avec db_setup.py)
+*.db
+data_projet.db
+
+# Logs éventuels
+logs.db
+
+# IDE (VS Code, Pycharm...)
+.vscode/
+.idea/
