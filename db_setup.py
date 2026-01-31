@@ -7,7 +7,7 @@ def init_db():
     conn = sqlite3.connect('data_projet.db')
     cursor = conn.cursor()
     
-    # Suppression pour repartir à zéro (optionnel, utile pour les tests)
+    # Suppression pour repartir à zéro
     cursor.execute('DROP TABLE IF EXISTS stock')
     
     csv_folder = "data"
@@ -16,8 +16,6 @@ def init_db():
         if file.endswith(".csv"):
             table_name = file.replace(".csv", "")
             file_path = os.path.join(csv_folder, file)
-
-            print(f"Import du fichier : {file} → table '{table_name}'")
 
             df = pd.read_csv(file_path)
 
@@ -30,7 +28,7 @@ def init_db():
     
     conn.commit()
     conn.close()
-    print("✅ Base de données 'data_projet.db' créée avec succès !")
+    print("Base de données 'data_projet.db' créée avec succès !")
 
 if __name__ == "__main__":
     init_db()
