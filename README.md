@@ -27,3 +27,4 @@ Ce projet est un assistant intelligent capable de transformer des questions en l
 - Définir le thème sur "Light" pour un rendu plus agréable
 
 # Lien vers la demo
+Cliquez ici pour voir la [démo du projet](https://local-sql-assistant.streamlit.app/)

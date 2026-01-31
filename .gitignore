@@ -6,10 +6,6 @@ __pycache__/
 venv/
 .env
 
-# Base de données (On ne l'envoie pas, on la recrée avec db_setup.py)
-*.db
-data_projet.db
-
 # Logs éventuels
 logs.db
 
